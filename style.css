@@ -6,7 +6,7 @@
 }
 
 :root {
-  --background-right: rgb(8, 44, 7);
+  --background-right: rgb(2, 24, 43);
 }
 
 .main {
@@ -43,11 +43,16 @@
   width: 65vw;
 }
 
+.right .content {
+  width: 90%;
+  margin: auto;
+}
+
 .right h2 {
   display: block;
   justify-self: flex-start;
 
-  margin-left: 50px;
+  /* margin-left: 50px; */
 
   width: 100%;
 }
@@ -77,13 +82,61 @@
 .right form input:focus {
   outline: none;
 
-  border: 2px solid yellowgreen;
+  border: 1px solid yellowgreen;
   border-radius: 5px;
 
-  transition: 1.2s ease all;
+  transition: 1s ease all;
 }
 
 .right form input::placeholder {
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+.right #buttonDiv {
+  align-self: flex-start;
+  margin-top: 20px;
+}
+
+.right button {
+  background-color: yellowgreen;
+  color: white;
+  text-transform: capitalize;
+
+  border: none;
+  border-radius: 3px;
+
+  width: max(7vw, 50px);
+  height: max(4vh, 30px);
+
+  font-size: max(1.4rem, 15px);
+  word-spacing: 3px;
+  letter-spacing: 2px;
+  font-weight: bold;
+
+  overflow-wrap: normal;
+  word-wrap: normal;
+  text-align: center;
+
+  margin-bottom: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(167, 207, 86);
+}
+
+p {
+  font-size: max(1.2rem, 15px);
+}
+
+a {
+  text-transform: uppercase;
+  color: yellowgreen;
+
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(181, 211, 121);
 }
