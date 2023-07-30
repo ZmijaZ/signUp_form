@@ -1,3 +1,89 @@
-* {
-  background-color: aliceblue;
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --background-right: rgb(8, 44, 7);
+}
+
+.main {
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.left {
+  background-color: greenyellow;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10%;
+
+  width: 35vw;
+}
+
+.left h1 {
+  position: relative;
+}
+
+/*                        R I G H T                         */
+
+.right {
+  background-color: var(--background-right);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 65vw;
+}
+
+.right h2 {
+  display: block;
+  justify-self: flex-start;
+
+  margin-left: 50px;
+
+  width: 100%;
+}
+
+.right form {
+  display: flex;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  gap: 20%;
+}
+
+.right form input {
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 1%;
+  margin: 1%;
+
+  font-size: min(1.2rem, 20px);
+
+  background-color: var(--background-right);
+
+  color: white;
+  letter-spacing: 1px;
+}
+
+.right form input:focus {
+  outline: none;
+
+  border: 2px solid yellowgreen;
+  border-radius: 5px;
+
+  transition: 1.2s ease all;
+}
+
+.right form input::placeholder {
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
