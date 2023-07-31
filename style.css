@@ -7,6 +7,10 @@
 
 :root {
   --background-right: rgb(2, 24, 43);
+  --font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  --clr-green: rgb(148, 231, 22);
 }
 
 .main {
@@ -16,7 +20,7 @@
 }
 
 .left {
-  background-color: greenyellow;
+  background-color: var(--clr-green);
 
   display: flex;
   flex-direction: column;
@@ -27,7 +31,21 @@
 }
 
 .left h1 {
-  position: relative;
+  width: 80%;
+  margin: auto;
+
+  font-family: var(--font);
+  font-size: max(2rem, 30px);
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  color: white;
+}
+
+.left h2 {
+  margin: auto;
+  color: white;
+
+  font-family: var(--font);
 }
 
 /*                        R I G H T                         */
@@ -51,24 +69,25 @@
 .right h2 {
   display: block;
   justify-self: flex-start;
-
-  /* margin-left: 50px; */
-
-  width: 100%;
 }
 
 .right form {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 
   flex-wrap: wrap;
   gap: 20%;
 }
 
+.right form .inputDiv {
+  display: flex;
+  flex-direction: column;
+}
+
 .right form input {
   border: none;
   border-bottom: 1px solid black;
-  padding: 1%;
+  padding: 5% 1% 5% 1%;
   margin: 1%;
 
   font-size: min(1.2rem, 20px);
@@ -85,12 +104,16 @@
   border: 1px solid yellowgreen;
   border-radius: 5px;
 
-  transition: 1s ease all;
+  transition: 1s ease border;
 }
 
 .right form input::placeholder {
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+.right form input:invalid {
+  color: red;
 }
 
 .right #buttonDiv {
@@ -99,15 +122,15 @@
 }
 
 .right button {
-  background-color: yellowgreen;
+  background-color: var(--clr-green);
   color: white;
   text-transform: capitalize;
 
   border: none;
   border-radius: 3px;
 
-  width: max(7vw, 50px);
-  height: max(4vh, 30px);
+  width: max(10vw, 250px);
+  height: max(5vh, 50px);
 
   font-size: max(1.4rem, 15px);
   word-spacing: 3px;
@@ -128,6 +151,8 @@ button:hover {
 
 p {
   font-size: max(1.2rem, 15px);
+
+  color: red;
 }
 
 a {

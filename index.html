@@ -19,20 +19,68 @@
         <div class="content">
           <h2>Get started</h2>
           <form action="#" method="POST" id="form">
-            <input type="text" placeholder="First name" id="firstName" />
-            <input type="text" placeholder="Last name" id="lastName" />
-            <input type="email" placeholder="Email" id="email" />
-            <input type="phone" placeholder="Phone" id="phone" />
-            <input type="password" placeholder="Password" id="password" />
-            <input
-              type="password"
-              placeholder="Confirm password"
-              id="passwordConfirm"
-            />
+            <div class="inputDiv">
+              <input
+                type="text"
+                placeholder="First name"
+                id="firstName"
+                required
+                pattern="[A-Za-z ]+"
+              />
+              <label id="fnLabel" for="firstName"
+                >Pattern not matched correctly</label
+              >
+            </div>
+
+            <div class="inputDiv">
+              <input
+                type="text"
+                placeholder="Last name"
+                id="lastName"
+                required
+                pattern="[A-Za-z ]+"
+              /><label id="lnLabel" for="lastName"
+                >Pattern not matched correctly</label
+              >
+            </div>
+            <div class="inputDiv">
+              <input type="email" placeholder="Email" id="email" />
+              <label id="eLabel" for="email"
+                >Patter not matched correctly</label
+              >
+            </div>
+            <div class="inputDiv">
+              <input
+                type="phone"
+                placeholder="Phone"
+                id="phone"
+                pattern="(+)?[0-9]+"
+                required
+              />
+              <label id="phLabel" for="phone"
+                >Pattern not matched correctly</label
+              >
+            </div>
+            <div class="inputDiv">
+              <input type="password" placeholder="Password" id="password" />
+              <label id="pwLabel" for="password"
+                >Patter not matched correctly</label
+              >
+            </div>
+            <div class="inputDiv">
+              <input
+                type="password"
+                placeholder="Confirm password"
+                id="passwordConfirm"
+              />
+              <label id="cpwLabel" for="passwordConfirm"
+                >Pattern not matched correctly</label
+              >
+            </div>
           </form>
           <div id="buttonDiv">
-            <button type="submit" form="form">Log in</button>
-            <p>Don't have an account? <a href="#">Register</a></p>
+            <button type="submit" form="form">Create account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
           </div>
         </div>
       </section>
