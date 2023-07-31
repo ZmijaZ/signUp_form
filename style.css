@@ -86,7 +86,7 @@
 
 .right form input {
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid yellowgreen;
   padding: 5% 1% 5% 1%;
   margin: 1%;
 
@@ -114,6 +114,7 @@
 
 .right form input:invalid {
   color: red;
+  border-color: yellowgreen;
 }
 
 .right #buttonDiv {
@@ -151,6 +152,9 @@ button:hover {
 
 p {
   font-size: max(1.2rem, 15px);
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  font-family: var(--font-);
 
   color: red;
 }
@@ -160,8 +164,20 @@ a {
   color: yellowgreen;
 
   text-decoration: none;
+
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  font-family: var(--font-);
 }
 
 a:hover {
   color: rgb(181, 211, 121);
+}
+
+label {
+  color: red;
+
+  word-spacing: 1px;
+  letter-spacing: 2px;
+  font-family: var(--font-);
 }

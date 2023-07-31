@@ -27,9 +27,7 @@
                 required
                 pattern="[A-Za-z ]+"
               />
-              <label id="fnLabel" for="firstName"
-                >Pattern not matched correctly</label
-              >
+              <label id="fnLabel" for="firstName"></label>
             </div>
 
             <div class="inputDiv">
@@ -39,43 +37,38 @@
                 id="lastName"
                 required
                 pattern="[A-Za-z ]+"
-              /><label id="lnLabel" for="lastName"
-                >Pattern not matched correctly</label
-              >
+              /><label id="lnLabel" for="lastName"></label>
             </div>
             <div class="inputDiv">
-              <input type="email" placeholder="Email" id="email" />
-              <label id="eLabel" for="email"
-                >Patter not matched correctly</label
-              >
+              <input type="email" placeholder="Email" id="email" required />
+              <label id="eLabel" for="email"></label>
             </div>
             <div class="inputDiv">
               <input
-                type="phone"
+                type="text"
                 placeholder="Phone"
                 id="phone"
-                pattern="(+)?[0-9]+"
-                required
+                pattern="(\+)?([0-9])+"
               />
-              <label id="phLabel" for="phone"
-                >Pattern not matched correctly</label
-              >
+              <label id="phLabel" for="phone"></label>
             </div>
             <div class="inputDiv">
-              <input type="password" placeholder="Password" id="password" />
-              <label id="pwLabel" for="password"
-                >Patter not matched correctly</label
-              >
+              <input
+                type="password"
+                placeholder="Password"
+                id="password"
+                required
+              />
+              <label id="pwLabel" for="password"></label>
             </div>
             <div class="inputDiv">
               <input
                 type="password"
                 placeholder="Confirm password"
                 id="passwordConfirm"
+                required
               />
-              <label id="cpwLabel" for="passwordConfirm"
-                >Pattern not matched correctly</label
-              >
+              <label id="cpwLabel" for="passwordConfirm"></label>
             </div>
           </form>
           <div id="buttonDiv">
