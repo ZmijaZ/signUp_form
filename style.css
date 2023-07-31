@@ -67,8 +67,14 @@
 }
 
 .right h2 {
-  display: block;
-  justify-self: flex-start;
+  color: white;
+  font-size: max(1.6rem, 30px);
+  font-family: var(--font);
+
+  word-spacing: 5px;
+  letter-spacing: 1px;
+
+  margin-bottom: 25px;
 }
 
 .right form {
